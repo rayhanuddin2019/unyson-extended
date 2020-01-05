@@ -1,0 +1,23 @@
+.attr-option-type-background-image > .type .attr-option-type-radio div {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.attr-option-type-background-image > .predefined,
+.attr-option-type-background-image > .custom {
+	margin-top: 15px;
+}
+
+.attr-option-type-background-image div.attr-option-type-radio {
+	margin: 0 0 9px -15px;
+	font-size: 14px;
+}
+
+.attr-option-type-background-image.no-choices > .type {
+	display: none;
+}
+
+.attr-option-type-background-image.no-choices > .predefined,
+.attr-option-type-background-image.no-choices > .custom {
+	margin-top: 0;
+}

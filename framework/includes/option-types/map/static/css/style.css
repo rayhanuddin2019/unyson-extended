@@ -1,0 +1,30 @@
+.attr-option-maps-tab.second {
+	display: none;
+}
+
+@media (min-width: 783px) {
+	.attr-option-maps-tab.second .inner {
+		padding-right: 10px;
+	}
+
+	.attr-force-xs .attr-option-maps-tab.second .inner {
+		padding-right: 0;
+	}
+}
+
+.attr-option-type-map .map-googlemap {
+	height: 218px;
+}
+
+.attr-option-type-map .attr-option-map-inputs {
+	margin-bottom: 10px;
+}
+
+.attr-option-maps-toggle {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.pac-container {
+	z-index: 160005;
+}

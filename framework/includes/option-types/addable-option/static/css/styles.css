@@ -1,0 +1,78 @@
+.attr-option-type-addable-option .attr-option-type-addable-option-option:not(.ui-sortable-helper) td {
+	max-width: 383px; /* .attr-backend-option-fixed-width - 45px */
+}
+
+.attr-option-type-addable-option .attr-option-type-addable-option-option td,
+#edittag .form-table .attr-option-type-addable-option .attr-option-type-addable-option-option td,
+#edittag .form-table .attr-option-type-addable-option tr.sortable-placeholder td {
+	padding: 0 0 15px 0;
+	vertical-align: top;
+}
+
+.attr-option-type-addable-option .attr-option-type-addable-option-option td.td-option,
+#edittag .form-table .attr-option-type-addable-option .attr-option-type-addable-option-option td.td-option {
+	padding-right: 10px;
+}
+body.rtl .attr-option-type-addable-option .attr-option-type-addable-option-option td.td-option,
+body.rtl #edittag .form-table .attr-option-type-addable-option .attr-option-type-addable-option-option td.td-option {
+	padding-right: 0;
+	padding-left: 10px;
+}
+
+.attr-option-type-addable-option .attr-option-type-addable-option-option td.td-remove,
+#edittag .form-table .attr-option-type-addable-option .attr-option-type-addable-option-option td.td-remove {
+	width: 10px;
+	padding-top: 4px;
+}
+
+.attr-option-type-addable-option .attr-option-type-addable-option-option td.td-remove .dashicons {
+	font-size: 16px;
+	line-height: 1.3;
+	color: #AAAAAA;
+}
+
+.attr-option-type-addable-option .attr-option-type-addable-option-option td.td-remove .dashicons:hover {
+	color: #CC0000;
+}
+
+.attr-option-type-addable-option .attr-option-type-addable-option-option td.td-move,
+#edittag .form-table .attr-option-type-addable-option .attr-option-type-addable-option-option td.td-move {
+	cursor: move;
+	width: 15px;
+	padding-top: 4px;
+}
+
+.attr-option-type-addable-option:not(.is-sortable) .attr-option-type-addable-option-option td.td-move {
+	display: none;
+}
+
+.attr-option-type-addable-option tr.attr-option-type-addable-option-option.ui-sortable-helper {
+	display: block;
+}
+
+.attr-option-type-addable-option tr.attr-option-type-addable-option-option.ui-sortable-helper:before,
+.attr-option-type-addable-option tr.attr-option-type-addable-option-option.ui-sortable-helper:after {
+	display: table;
+	content: " ";
+}
+
+.attr-option-type-addable-option tr.attr-option-type-addable-option-option.ui-sortable-helper > td {
+	display: block;
+	float: left;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body.rtl .attr-option-type-addable-option tr.attr-option-type-addable-option-option.ui-sortable-helper > td {
+	float: right;
+}
+
+.attr-option-type-addable-option tr.attr-option-type-addable-option-option.ui-sortable-helper td.td-option {
+	width: calc(100% - 35px);
+}
+
+
+.attr-backend-option-input-type-addable-option .attr-option-help-in-input {
+	top: 4px !important;
+}

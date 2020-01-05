@@ -1,0 +1,21 @@
+.attr-backend-option-input-type-gradient .attr-option-help-in-input {
+	top: 4px !important;
+}
+
+.attr-option-type-gradient .primary-color {
+	display: inline-block;
+}
+
+.attr-option-type-gradient .secondary-color {
+	display: inline-block;
+}
+
+.attr-option-type-gradient .delimiter {
+	display: inline-block;
+	padding: 0 4px;
+}
+
+#side-sortables .attr-option-type-gradient .secondary-color,
+#side-sortables .attr-option-type-gradient .primary-color {
+	width: inherit !important;
+}

@@ -1,0 +1,158 @@
+/*
+Styles for options type from option-types.php file, that has no own style.css
+*/
+
+
+/* placeholder */
+
+.attr-option ::-webkit-input-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option ::-moz-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option :-ms-input-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option :-moz-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option::-webkit-input-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option::-moz-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option:-ms-input-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.attr-option:-moz-placeholder {
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+/* end: placeholder */
+
+
+textarea.attr-option-type-textarea {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+
+.attr-backend-option-type-hidden,
+.attr-backend-option-type-unique {
+	display: none;
+}
+
+
+.attr-backend-option-input-type-text .attr-option-help-in-input,
+.attr-backend-option-input-type-short-text .attr-option-help-in-input,
+.attr-backend-option-input-type-select .attr-option-help-in-input,
+.attr-backend-option-input-type-short-select .attr-option-help-in-input,
+.attr-backend-option-input-type-password .attr-option-help-in-input {
+	top: 4px !important;
+}
+
+
+.attr-option-type-checkboxes > div,
+.attr-option-type-radio > div {
+	margin-bottom: 6px;
+}
+
+
+.attr-option-width-short {
+	width: 100px !important;
+}
+
+/* Radio and Checkboxes inline */
+
+.attr-option-type-checkboxes.attr-option-type-checkboxes-inline > div,
+.attr-option-type-radio.attr-option-type-radio-inline > div {
+	float: left;
+	margin-right: 10px;
+}
+
+.attr-option-type-checkboxes.attr-option-type-checkboxes-inline > div:last-child,
+.attr-option-type-radio.attr-option-type-radio-inline > div:last-child {
+	margin-right: 0;
+}
+
+/* RTL Radio and Checkboxes inline */
+body.rtl .attr-option-type-checkboxes.attr-option-type-checkboxes-inline > div:not(:last-child),
+body.rtl .attr-option-type-radio.attr-option-type-radio-inline > div:not(:last-child) {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+/* end: Radio amd Checkboxes inline */
+
+/* modal fixes */
+
+.attr-modal .media-frame input[type=password],
+.attr-modal .media-frame input[type=number],
+.attr-modal .media-frame input[type=search],
+.attr-modal .media-frame input[type=email],
+.attr-modal .media-frame input[type=text],
+.attr-modal .media-frame input[type=url],
+.attr-modal .media-frame select,
+.attr-modal .media-frame textarea {
+	font-size: 14px;
+}
+
+.attr-modal .media-frame select {
+	line-height: 28px;
+	height: 28px;
+	padding: 2px;
+	margin: 1px;
+}
+
+.attr-modal .media-frame select[multiple] {
+	height: auto;
+}
+
+.attr-modal .media-frame input[type=password],
+.attr-modal .media-frame input[type=number],
+.attr-modal .media-frame input[type=search],
+.attr-modal .media-frame input[type=email],
+.attr-modal .media-frame input[type=text],
+.attr-modal .media-frame input[type=url] {
+	height: 28px;
+	padding: 3px 5px;
+}
+
+.attr-modal .media-frame textarea {
+	padding: 3px 5px;
+}
+
+.attr-modal .media-frame textarea.code {
+	line-height: 1.4;
+}
+
+@media (max-width: 782px) {
+	.attr-option-type-checkboxes label,
+	.attr-option-type-radio label {
+		vertical-align: middle;
+		line-height: 2.2em;
+	}
+
+	select.attr-option-type-select-multiple {
+		height: auto !important;
+	}
+}
+
+/* end: modal fixes */

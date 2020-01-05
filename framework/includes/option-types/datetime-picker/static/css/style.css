@@ -1,0 +1,10 @@
+.attr_xdsoft_datetimepicker.attr_xdsoft_noselect {
+	z-index: 560100; /* bigger than attr.OptionsModal's z-index */
+}
+
+.attr-backend-option-input-type-datetime-picker .attr-option-help-in-input {
+	top: 4px !important;
+}
+.attr-option-type-datetime-picker input[readonly] {
+	background-color: #fff;
+}

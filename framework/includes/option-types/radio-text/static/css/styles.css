@@ -1,0 +1,43 @@
+.attr-option-type-radio-text .predefined,
+.attr-option-type-radio-text .predefined .attr-option-type-radio,
+.attr-option-type-radio-text .predefined .attr-option-type-radio div,
+.attr-option-type-radio-text .custom {
+	display: inline-block;
+}
+
+.attr-option-type-radio-text .predefined {
+	vertical-align: middle;
+}
+
+.attr-option-type-radio-text .predefined .attr-option-type-radio div {
+	margin-left: 10px;
+}
+
+body.rtl .attr-option-type-radio-text .predefined .attr-option-type-radio div {
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.attr-option-type-radio-text .predefined .attr-option-type-radio div:first-child {
+	margin-left: inherit;
+}
+
+body.rtl .attr-option-type-radio-text .predefined .attr-option-type-radio div:first-child {
+	margin-right: inherit;
+}
+
+.attr-option-type-radio-text .custom input.attr-option-type-text{
+	width: 100px;
+	margin-left: 10px;
+}
+
+.attr-option-type-radio-text .custom input.attr-option-type-text:first-child{
+	margin: 0;
+}
+
+
+.attr-backend-option-input-type-radio-text .attr-option-help-in-input {
+	top: 4px !important;
+}
+
+

@@ -1,0 +1,77 @@
+.attr-option-type-addable-box {
+	max-width: 100%;
+}
+
+.attr-option-type-addable-box.has-boxes.width-type-full {
+	width: 9999px;
+}
+
+.attr-option-type-addable-box.has-boxes.width-type-fixed {
+	width: 428px; /* same as .attr-backend-option-fixed-width */
+}
+
+.attr-option-type-addable-box > .attr-option-boxes.ui-sortable > .attr-option-box > .attr-postbox {
+	min-width: 100%;
+}
+
+.attr-option-type-addable-box > .attr-option-boxes.ui-sortable > .attr-option-box > .attr-postbox > .hndle {
+	cursor: move !important; /* to rewrite .attr-postbox h3.hndle */
+	word-break: break-all; /* if box text is too long, do not move controls outside box */
+	position: relative;
+}
+
+.attr-option-type-addable-box > .attr-option-boxes.ui-sortable > .attr-option-box > .attr-postbox > .hndle > span {
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 100%;
+	display: block;
+}
+
+#wpbody-content .attr-option-type-addable-box .metabox-holder {
+	padding: 0;
+	margin: 0;
+}
+
+.attr-option-type-addable-box > .attr-option-boxes > .attr-option-box {
+	margin-bottom: 20px;
+}
+
+.attr-option-type-addable-box > .attr-option-boxes.ui-sortable > .attr-option-box > .attr-postbox > .hndle span:after {
+	content: '\00a0'; /* &nbsp; - when title is empty, box has too small (broken) height */
+}
+
+.attr-option-type-addable-box > .attr-option-boxes.ui-sortable > .attr-option-box > .attr-postbox > .hndle img {
+	vertical-align: middle;
+}
+
+.attr-option-type-addable-box .attr-backend-option-design-customizer {
+	padding: 15px;
+}
+
+
+/* Controls */
+
+
+.attr-option-type-addable-box > .attr-option-boxes > .attr-option-box .hndle .attr-html-after-title {
+	position: absolute;
+	top: 0;
+	right: 27px;
+	display: block;
+	height: 100%;
+	background-color: #FFF;
+	box-sizing: border-box;
+	padding: 0 3px;
+	padding-top: inherit;
+}
+
+.attr-option-type-addable-box > .attr-option-boxes > .attr-option-box .hndle .attr-html-after-title .attr-option-box-controls .attr-option-box-control {
+	text-decoration: none;
+}
+
+.attr-option-type-addable-box > .attr-option-boxes > .attr-option-box .hndle .attr-html-after-title .attr-option-box-controls .attr-option-box-control-wrapper {
+	color: #cccccc;
+}
+
+/* end: Controls */
+
+

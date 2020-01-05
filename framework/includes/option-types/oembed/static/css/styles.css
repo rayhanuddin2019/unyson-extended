@@ -1,0 +1,19 @@
+.attr-oembed-preview img,
+.attr-oembed-preview iframe,
+.attr-oembed-preview embed
+{
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.attr-oembed-preview a {
+	display: inline-block;
+}
+
+.attr-oembed-preview img {
+	display: block;
+	height: auto;
+}
+.attr-oembed-preview {
+	padding-top: 7px;
+}

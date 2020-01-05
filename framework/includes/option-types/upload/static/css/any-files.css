@@ -1,0 +1,22 @@
+.attr-option-type-upload.any-files.empty span {
+	display: none;
+}
+.attr-option-type-upload.any-files span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.attr-option-type-upload.any-files em {
+	font-style: normal;
+}
+.attr-option-type-upload.any-files a {
+	outline: none;
+}
+.attr-option-type-upload.any-files button {
+	vertical-align: middle;
+}
+
+
+.attr-backend-option-input-type-upload .attr-option-help-in-input {
+	top: 4px !important;
+}

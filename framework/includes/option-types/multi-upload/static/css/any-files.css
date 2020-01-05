@@ -1,0 +1,23 @@
+.attr-option-type-multi-upload.any-files.empty span {
+	display: none;
+}
+.attr-option-type-multi-upload.any-files span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.attr-option-type-multi-upload.any-files em {
+	font-style: normal;
+	vertical-align: middle;
+}
+.attr-option-type-multi-upload.any-files a {
+	outline: none;
+}
+.attr-option-type.any-files button {
+	vertical-align: middle;
+}
+
+
+.attr-backend-option-input-type-multi-upload .attr-option-help-in-input {
+	top: 4px !important;
+}

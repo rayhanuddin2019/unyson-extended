@@ -1,0 +1,31 @@
+.attr-backend-option-type-multi {
+	padding: 0 !important;
+}
+
+.attr-option-type-multi > .attr-backend-option {
+	border-bottom-width: 0;
+}
+
+.attr-option-type-multi > .attr-backend-option.attr-backend-option-type-multi + .attr-backend-option.attr-backend-option-type-multi {
+	border-top-width: 1px;
+}
+
+/* show options separator borders */
+
+.attr-option-type-multi.attr-option-type-multi-show-borders > .attr-backend-option {
+	border-bottom-width: 1px;
+}
+
+.attr-option-type-multi.attr-option-type-multi-show-borders > .attr-backend-option:last-child {
+	border-bottom-width: 0;
+}
+
+/* end: show options separator borders */
+
+.attr-option-type-multi:not(.attr-option-type-multi-show-borders) > .attr-backend-option:not(:last-child) {
+	padding-bottom: 0;
+}
+
+.attr-backend-option-type-multi.attr-backend-option-design-customizer .attr-option-type-multi > .attr-backend-option {
+	padding: 5px 0 10px;
+}

@@ -1,0 +1,294 @@
+.attr-backend-option-input-type-typography .attr-option-help-in-input {
+	top: 4px !important;
+}
+
+.attr-option-type-typography .attr-option-typography-option {
+	padding-right: 5px;
+	width: 167px;
+}
+body.rtl .attr-option-type-typography .attr-option-typography-option {
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+.attr-option-type-typography .attr-option-typography-option.attr-option-typography-option-size {
+	width: 67px;
+}
+
+.attr-option-type-typography .attr-option-typography-option:last-child,
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option {
+	padding-right: 0;
+}
+body.rtl .attr-option-type-typography .attr-option-typography-option:last-child,
+body.rtl .attr-force-xs .attr-option-type-typography .attr-option-typography-option {
+	padding-left: 0;
+}
+
+@media (max-width: 782px) {
+	.attr-backend-option-input-type-typography {
+		width: 100%;
+	}
+
+	.attr-option-type-typography .attr-option-typography-option {
+		padding-top: 5px;
+		padding-right: 0;
+	}
+	body.rtl .attr-option-type-typography .attr-option-typography-option {
+		padding-left: 0;
+	}
+
+	.attr-option-type-typography .attr-option-typography-option:first-child {
+		padding-top: 0;
+	}
+
+	.attr-option-type-typography .attr-option-typography-option.attr-option-typography-option-size {
+		width: 100%;
+	}
+}
+.attr-force-xs .attr-backend-option-input-type-typography {
+	width: 100%;
+}
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option {
+	padding-top: 5px;
+	padding-right: 0;
+}
+body.rtl .attr-force-xs .attr-option-type-typography .attr-option-typography-option {
+	padding-left: 0;
+}
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option:first-child {
+	padding-top: 0;
+}
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option.attr-option-typography-option-size {
+	width: 100%;
+}
+
+.attr-option-type-typography .attr-option-typography-option input,
+.attr-option-type-typography .attr-option-typography-option select {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+
+
+/* Color */
+
+@media (min-width: 783px) {
+	.attr-option-type-typography .attr-option-typography-option-color input {
+		height: 28px;
+	}
+}
+
+/* Family */
+
+.attr-option-type-typography .attr-option-typography-option-family-input {
+	background: #fff;
+}
+
+.attr-option-type-typography .attr-option-typography-option-family-input .selectize-input {
+	height: 32px;
+}
+
+.attr-option-type-typography .attr-option-typography-option-family-input .selectize-input.dropdown-active::before {
+	background: none;
+	height: 0;
+}
+
+.attr-option-type-typography .attr-option-typography-option-family .selectize-control.single .selectize-input:after {
+	right: 8px;
+	margin-top: -2px;
+	border-width: 6px 3px 0 3px;
+	border-color: #000000 transparent transparent transparent;
+}
+body.rtl .attr-option-type-typography .attr-option-typography-option-family .selectize-control.single .selectize-input:after {
+	right: auto;
+	left: 8px;
+}
+
+@media (max-width: 782px) {
+	.attr-option-type-typography .attr-option-typography-option-family .selectize-control.single .selectize-input:after {
+		right: 6px;
+	}
+
+	.attr-option-typography-option.attr-option-typography-option-family,
+	.attr-option-type-typography .attr-option-typography-option-family-input {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option-family .selectize-control.single .selectize-input:after {
+	right: 6px;
+}
+.attr-force-xs .attr-option-typography-option.attr-option-typography-option-family,
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option-family-input {
+	width: 100%;
+	margin-right: 0;
+}
+
+.attr-option-type-typography .attr-option-typography-option-family-input:focus,
+.attr-option-type-typography .attr-option-typography-option-family-input.single .selectize-input.focus {
+	/*border: 1px solid #5b9dd9;
+
+	-webkit-box-shadow: 0 0 2px rgba(30,140,190,.8);
+	box-shadow: 0 0 2px rgba(30,140,190,.8);*/
+
+	-webkit-transition: .05s border-color ease-in-out;
+	transition: .05s border-color ease-in-out;
+}
+
+.attr-option-type-typography .selectize-dropdown.attr-option-typography-option-family-input {
+	width: 335px !important;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+	border: 1px solid #ddd;
+}
+
+.attr-option-type-typography .selectize-dropdown .selectize-dropdown-content div {
+	height: 30px;
+	background-color: #fff;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+	line-height: 30px;
+}
+
+.attr-option-type-typography .selectize-dropdown .selectize-dropdown-content div div.preview {
+	display: block;
+	font-size: 15px;
+	padding-left: 10px;
+	height: 30px;
+	width: 125px;
+	float: right;
+	border: none;
+	background: transparent url(../images/google-fonts.png) no-repeat;
+}
+
+.attr-option-type-typography .selectize-dropdown .selectize-dropdown-content div.option span {
+	border: none;
+	background: none;
+	color: red;
+}
+
+.attr-option-type-typography .selectize-dropdown .selectize-dropdown-content div:hover,
+.attr-option-type-typography .selectize-dropdown .selectize-dropdown-content div div.preview:hover {
+	background-color: #f0f0f0;
+}
+
+.attr-option-type-typography .selectize-dropdown.single {
+	border: 1px solid #ddd;
+}
+
+.attr-option-type-typography .selectize-control.single .selectize-input {
+	background: none;
+	margin: 0;
+	vertical-align: middle;
+	border: 1px solid #dddddd;
+	color: #333333;
+	height: 28px;
+	line-height: 27px;
+	font-size: 14px;
+	padding: 0 6px;
+
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+@media (max-width: 782px) {
+	.attr-option-type-typography .selectize-dropdown.attr-option-typography-option-family-input {
+		width: 100% !important;
+	}
+
+	.attr-option-type-typography .selectize-control.single .selectize-input {
+		font-size: 16px;
+		height: 36px;
+		line-height: 36px;
+	}
+
+	#edittag .attr-option-type-typography .selectize-control.single .selectize-input {
+		padding: 0 14px;
+	}
+}
+.attr-force-xs .attr-option-type-typography .selectize-dropdown.attr-option-typography-option-family-input {
+	width: 100%!important;
+}
+.attr-force-xs .attr-option-type-typography .selectize-control.single .selectize-input {
+	font-size: 16px;
+}
+#edittag .attr-force-xs .attr-option-type-typography .selectize-control.single .selectize-input {
+	padding: 0 14px;
+}
+
+.attr-option-type-typography div.selectize-input.items.full.has-options.has-items {
+	background: none;
+}
+
+.attr-option-type-typography .selectize-dropdown .selectize-dropdown-content {
+	border: 1px solid #ddd;
+}
+
+.attr-option-type-typography .selectize-control .selectize-dropdown {
+	border: none;
+	top: 33px !important;
+}
+@media (max-width: 782px) {
+	.attr-option-type-typography .selectize-control .selectize-dropdown {
+		top: 42px !important;
+	}
+}
+
+@media (max-width: 782px) {
+	.attr-option-type-typography .attr-option-typography-option-style,
+	.attr-option-type-typography .attr-option-typography-option-color,
+	.attr-option-type-typography .attr-option-typography-option-color .attr-option-type-color-picker {
+		width: 100% !important;
+	}
+}
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option-style,
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option-color,
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option-color .attr-option-type-color-picker {
+	width: 100% !important;
+}
+
+/*
+Fix: for color picker width too small or too big
+Solution: Set color fixed size, and font-style to calculate its width
+
+font-style: attr-col-sm-3 = 25%
+color:      attr-col-sm-2 = 16.66666667%
+
+25% + 16.66666667% = 41.66666667%
+*/
+
+.attr-option-type-typography .attr-option-typography-option-color {
+	width: 70px; /* should be same width as option type color-picker */
+}
+
+.attr-option-type-typography .attr-option-typography-option-style {
+	width: 98px;
+}
+
+.attr-option-type-typography .attr-option-typography-option-size {
+	width: 67px;
+}
+
+@media (max-width: 782px) {
+	.attr-option-type-typography .attr-option-typography-option-size {
+		width: 100%;
+	}
+}
+.attr-force-xs .attr-option-type-typography .attr-option-typography-option-size {
+	width: 100%;
+}
+
+
+/* Disable Selectize search */
+
+.attr-option-type-typography .attr-option-typography-option .selectize-control.single .selectize-input input {
+	display: none;
+}
+
+.attr-option-type-typography .attr-option-typography-option .selectize-control.single .selectize-input.input-active {
+	 cursor: default;
+}

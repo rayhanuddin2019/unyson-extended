@@ -1,0 +1,87 @@
+.attr-backend-option-type-multi-picker {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* hide last inner option border */
+.attr-postbox .attr-option-type-multi-picker > .attr-backend-options-group.choice-group:after,
+.postbox-with-attr-options .attr-option-type-multi-picker > .attr-backend-options-group.choice-group:after,
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders > .choice-group > .attr-backend-option:after,
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders > .choice-group .attr-options-tabs-contents > .attr-inner > .attr-options-tab:after {
+	content: ' ';
+	display: block;
+	border-top: 1px solid #fff;
+	margin-top: -1px;
+	position: relative;
+}
+
+.attr-option-type-multi-picker > .choice-group {
+	display: none;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.attr-option-type-multi-picker > .choice-group.chosen {
+	display: block;
+
+	-webkit-animation-name: attrFadeIn;
+	animation-name: attrFadeIn;
+
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+}
+
+.attr-option-type-multi-picker-dynamic-container.attr-backend-option-type-multi-picker:not(.attr-has-dynamic-choice) {
+	display: none;
+}
+
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders:not(.has-choice) > .picker-group > .attr-backend-option,
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders > .choice-group > .attr-backend-option-type-multi > div > div > div > div > .attr-backend-option:last-child,
+.attr-option-type-multi-picker.attr-option-type-multi-picker-without-borders > .choice-group > .attr-backend-option-type-multi > div > div > div > div > .attr-backend-option {
+	padding-bottom: 0; /* prevent backend-option double padding */
+}
+
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders.has-choice > .picker-group,
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders > .choice-group > .attr-backend-option:not(:last-child) {
+	border-bottom-width: 1px;
+}
+
+.attr-option-type-multi-picker.attr-option-type-multi-picker-without-borders > .picker-group,
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders:not(.has-choice) > .picker-group {
+	border-bottom-width: 0;
+}
+
+.attr-option-type-multi-picker > .picker-group > .attr-backend-option {
+	padding-top: 0; /* prevent backend-option double padding */
+	padding-bottom: 0; /* prevent backend-option double padding */
+}
+
+.attr-option-type-multi-picker.attr-option-type-multi-picker-with-borders > .picker-group > .attr-backend-option {
+	padding-bottom: 21px;
+}
+
+.attr-backend-option-type-multi-picker.attr-backend-option-design-customizer .attr-option-type-multi-picker > .picker-group {
+	padding-bottom: 10px;
+}
+
+/* tabs fixes */
+
+.attr-option-type-multi-picker > .choice-group .attr-options-tabs-wrapper > .attr-options-tabs-list,
+.attr-option-type-multi-picker > .choice-group .attr-options-tabs-wrapper > .attr-options-tabs-contents > .attr-inner > .attr-options-tab > .attr-options-tabs-wrapper > .attr-options-tabs-list {
+	padding-left: 27px; /* same as .attr-backend-option-design-default */
+}
+
+.attr-option-type-multi-picker > .choice-group .attr-options-tabs-wrapper > .attr-options-tabs-list {
+	padding-top: 24px; /* same as .attr-backend-option-design-default */
+}
+
+.attr-option-type-multi-picker > .choice-group .attr-options-tabs-wrapper > .attr-options-tabs-contents > .attr-inner > .attr-options-tab > .attr-options-tabs-wrapper > .attr-options-tabs-list {
+	padding-top: 20px;
+}
+
+.attr-option-type-multi-picker > .choice-group .attr-options-tabs-wrapper > .attr-options-tabs-contents {
+	margin-top: 0;
+}
+
+/* end: tabs fixes */
+

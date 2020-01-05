@@ -1,0 +1,31 @@
+.attr-option-type-multi-select .selectize-input {
+	padding: 4px 6px;
+}
+
+.attr-option-type-multi-select .selectize-input.focus.input-active.dropdown-active:before,
+.attr-option-type-multi-select .selectize-input.focus.input-active.dropdown-active:before {
+	display: none;
+}
+
+.attr-backend-option-input-type-multi-select .attr-option-help-in-input {
+	top: 4px !important;
+}
+
+.attr-backend-option-type-multi-select .selectize-control .selectize-dropdown .selectize-dropdown-content div > .type:before,
+.attr-backend-option-type-multi-select .selectize-control .selectize-input > div > .type:before {
+	content: "(";
+	margin-right: 1px;
+}
+
+.attr-backend-option-type-multi-select .selectize-control .selectize-dropdown .selectize-dropdown-content div > .type:after,
+.attr-backend-option-type-multi-select .selectize-control .selectize-input > div > .type:after {
+	content: ")";
+	margin-left: 1px;
+}
+
+.attr-backend-option-type-multi-select .selectize-control .selectize-dropdown .selectize-dropdown-content div > .type,
+.attr-backend-option-type-multi-select .selectize-control .selectize-input > div > .type {
+	opacity: .5;
+	font-size: 80%;
+	margin-left: 5px;
+}
