@@ -12,9 +12,9 @@ if (defined('ATTR')) {
 	 */
 } else {
 	define('ATTR', true);
-	add_action('after_setup_theme', '_action_init_framework');
+	add_action('after_setup_theme', 'attr_action_init_framework');
 
-	function _action_init_framework() {
+	function attr_action_init_framework() {
 		if (did_action('attr_init')) {
 			return;
 		}

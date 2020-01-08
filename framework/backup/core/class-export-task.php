@@ -58,7 +58,7 @@ Class Attr_Export_Task extends Attr_Backups_Task{
 
 			if (!$is_full) {
 				
-				$this->tables = apply_filters( 'attr:backups:db-export:tables', $this->tables );
+				$this->tables = apply_filters( 'attr_backups_db_export_tables', $this->tables );
 			}
 		}
 
@@ -85,7 +85,7 @@ Class Attr_Export_Task extends Attr_Backups_Task{
 			return $tables;
 		}
     }
-    private function get_next_table($name, $is_full) {
+    public function get_next_table($name, $is_full=false) {
 		$tables = $this->get_tables($is_full);
 		$keys = array_keys($tables);
 		$index = array_search($name, $keys);
@@ -102,15 +102,15 @@ Class Attr_Export_Task extends Attr_Backups_Task{
 		{
 			if (!isset($args['dir'])) {
 				return new WP_Error(
-					'no_destination_dir', __('Destination dir not specified', 'fw')
+					'no_destination_dir', __('Destination dir not specified', 'attr')
 				);
 			}
-
+            
 			$args['full'] = isset($args['full']) ? (bool)$args['full'] : false;
 		}
 
 		$tables = $this->get_tables($args['full']);
-
+   
 		if (empty($state)) {
 			$state = array(
 				'table' => key($tables),
@@ -120,29 +120,32 @@ Class Attr_Export_Task extends Attr_Backups_Task{
 		} else {
 			$state['limit'] = (int)$state['limit']; // just to make sure. this will not be escaped in sql
 		}
-
+		
 		if (!isset($tables[$state['table']])) {
 			return new WP_Error(
 				'table_disappeared', __('Database table disappeared', 'fw')
 			);
 		}
-
+	
 		global $wpdb; 
 
-		$max_time = time() + 35610;
-
+		$max_time = time() + 600;
+	
 		while (time() < $max_time) {
 			// open file for writing
 			{
 				$file_path = $args['dir'] .'/database.json.txt';
-
+			
 				if (!file_exists($file_path)) {
+					
 					if (!($fp = @fopen($file_path, 'w'))) {
+						
 						return new WP_Error(
 							'cannot_create_file', __('Cannot create file', 'fw') .': '. $file_path
 						);
 					}
 				} else {
+					
 					if (!($fp = @fopen($file_path, 'a'))) {
 						return new WP_Error(
 							'cannot_reopen_file', __('Cannot reopen file', 'fw') .': '. $file_path
@@ -150,7 +153,7 @@ Class Attr_Export_Task extends Attr_Backups_Task{
 					}
 				}
 			}
-
+			
 			if (!$state['params']) {
 				fwrite(
 					$fp,

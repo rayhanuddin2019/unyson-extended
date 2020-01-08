@@ -103,7 +103,7 @@ Class Attr_Import_Task extends Attr_Backups_Task{
 			}
 		}
 
-		$max_time = time() + 36000;
+		$max_time = time() + 600;
 
 		while ( time() < $max_time ) {
 			if ( $line = $fo->current() ) {
@@ -398,7 +398,7 @@ Class Attr_Import_Task extends Attr_Backups_Task{
 			unset($filter_data);
 		}
 
-		$max_time = time() + 360000;
+		$max_time = time() + 3600;
 
 		while ( time() < $max_time ) {
 			if ( $line = $fo->current() ) {

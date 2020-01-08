@@ -6,8 +6,12 @@
    $attr_backup_List_Table->prepare_items();
 
    $attr_export = new Attr_Export_Task();
-   $attr_export->get_tables(false);
-   var_dump($attr_export); 
+   $state = $attr_export->execute(
+      ['dir'=>attr_backups_destination_directory()]
+   );
+
+ 
+   
   // print_r($attr_export->attr_demo_data_export(['posts']));
 ?>
 <div class="attr-backup-content-section">

@@ -20,12 +20,29 @@ if (defined('ATTR')) {
 		/** @internal */
 		function _action_attr_plugin_activate() {
 			update_option( '_attr_plugin_activated', true, false ); // add special option (is used in another action)
-
-		
+		  
 			if ( did_action( 'after_setup_theme' ) && ! did_action( 'attr_init' ) ) {
 				_action_init_framework(); // load (prematurely) the plugin
 				do_action( 'attr_plugin_activate' );
 			}
+			$uploads = wp_upload_dir();
+
+	        
+            $path =  $uploads['basedir'] . '/attr-backup';
+			$windows_network_path = isset( $_SERVER['windir'] ) && in_array( substr( $path, 0, 2 ),
+			array( '//', '\\\\' ),
+			true );
+			$fixed_path   = untrailingslashit( str_replace( array( '//', '\\' ), array( '/', '/' ), $path ) );
+
+			if ( empty( $fixed_path ) && ! empty( $path ) ) {
+				$fixed_path = '/';
+			}
+
+			if ( $windows_network_path ) {
+				$fixed_path = '//' . ltrim( $fixed_path, '/' );
+			}
+
+			if(!file_exists($fixed_path)) wp_mkdir_p($fixed_path);	
 		}
 
 		register_activation_hook( __FILE__, '_action_attr_plugin_activate' );
